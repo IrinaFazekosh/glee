@@ -3,9 +3,97 @@
 @import 'reset';
 @import 'global';
 
-
-
-
+.header{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__text{
+    margin-left: 15px;
+    color: $default;
+    font-size: 36px;
+    @extend %rubik-500;
+  }
+}
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link{
+    color: $default;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+  }
+}
+.user-nav{
+  display: flex;
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf1f4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &__products{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcd7b6;
+    border-radius: 70px;
+    margin: 0 20px;
+    padding: 17px 40px 13px 40px;
+    width: 180px;
+  }
+  &__likes-line{
+    position: relative;
+  }
+  &__likes-line::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    top: -7px;
+    left: 50px;
+    background-color: #fde7d3;
+  }
+  &__likes{
+    position: relative;
+  }
+  &__likes-num{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    background-color: #fff;
+    right: -11px;
+    top: -6px;
+    text-align: center;
+    border-radius: 50%;
+    @extend %dmsand-700;
+  }
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a3bbc8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
 
 @import 'media';
 
