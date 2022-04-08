@@ -1,4 +1,5 @@
 $default: #436372;
+$accent: #fef7f0;
 
 
 %dmsand-700{
@@ -29,4 +30,13 @@ $default: #436372;
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
+}
+
+%btn {
+ background-color: #a3bbc8;
+ color: #fff;
+ padding: 14px 15px 14px 15px;
+ font-size: 14px;
+ @extend %dmsand-400;
+ border: none;
 }
