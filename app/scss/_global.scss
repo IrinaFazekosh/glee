@@ -15,3 +15,11 @@ a {
   font-size: 14px;
   @extend %rubik-400;
 }
+
+.title{
+  font-size: 36px;
+  text-align: center;
+  @extend %dmsand-700;
+  color: #1a1a1a;
+}
+
