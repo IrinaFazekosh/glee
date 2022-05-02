@@ -95,6 +95,19 @@
     border-radius: 50%;
   }
 }
+
+.top{
+  padding: 35px 0 35px;
+  background-color: #edf1f4;
+  &__title{
+    font-size: 36px;
+    @extend %rubik-400;
+    color: #222933;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 footer{
   background-color: #fff;
   width: 1170px;
@@ -447,30 +460,28 @@ footer{
 .product {
   margin-bottom: 100px;
   margin-top: 100px;
-
   &__inner {
     display: flex;
     justify-content: center;
     gap: 30px;
-
   }
 
   &__item {
     max-width: 870px;
     background-color: #feefe2;
-    padding: 100px 150px 100px 50px;
-    background-repeat: no-repeat;
-    /*background-position-y: -50%;*/
-    background-size: auto;
-    width: 100%;
+    padding: 100px 145px 100px 50px;
     display: flex;
-    justify-content: flex-end;
-    min-height: 500px;
+    justify-content: space-between;
+    min-height: 390px;
     overflow: visible;
   }
-
+  &__img{
+    margin-top: -200px;
+    height: auto;
+    margin-right: 58px;
+  }
   &__info {
-    max-width: 330px;
+    max-width: 340px;
   }
 
   &__title {
@@ -568,8 +579,190 @@ margin: 0 auto;
   }
 }
 
+.articles{
+  padding-top: 120px;
+  max-width: 1170px;
+  margin: 0 auto;
+  &__top{
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    text-align: left;
+  }
+  &__more{
+    color: #262626;
+    @extend %dmsand-700;
+    line-height: 1.2;
+    position: relative;
+    margin-right: 15px;
+  }
+  &__more::after{
+    content: '';
+    background-image: url('../images/icons/arrows-articles.svg');
+    top: 2px;
+    right: -34px;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    margin-right: 20px;
+  }
+  &__items{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+  }
+  &__inner{
+    max-width: 370px;
+  }
+  &__img{
+  position: relative;
+  }
+  &__img-news{
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 5px 30px;
+    text-align: center;
+    border-radius: 70px;
+    margin-left: 28px;
+    margin-top: -17px;
+    position: absolute;
+    font-size: 14px;
+    @extend %poppins-700;
+  }
+  &__item-box{
+    padding: 37px 30px 30px;
+    border-radius: 10px;
+    min-height: 170px;
+    background-color: #fff;
+  }
+  &__text-name{
+    max-width: 285px;
+    font-size: 18px;
+    @extend %dmsand-400;
+    color: #262626;
+    margin-bottom: 20px;
+  }
+  &__text-call{
+    margin-bottom: 45px;
+  }
+  &__text-line{
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 315px;
+  }
+  &__item-info{
+    display: flex;
+    margin-top: 20px;
+  }
+  &__item-date{
+    color: #222933;
+    font-size: 12px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    @extend %dmsand-400;
+  }
+  &__item-author{
+    color: #222933;
+    font-size: 12px;
+    text-transform: uppercase;
+    @extend %dmsand-400;
+  }
+}
 
+.partners{
+  background-color: $accent;
+  padding: 260px 0 85px;
+  margin-top: -205px;
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+  &__item{
+    margin-right: 100px;
+}
+}
 
+.icons {
+  background-color: $accent;
+  padding: 77px 0 88px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  &__item {
+    margin-right: 100px;
+  }
+}
+
+.modal{
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  &__label,
+  &__error {
+    margin-bottom: 30px;
+    display: block;
+    font-size: 14px;
+    color: $default;
+    @extend %rubik-400;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    background-color: #fff;
+    margin-top: 14px;
+    height: 55px;
+    padding: 0 15px;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    @extend %rubik-400;
+    color: #fffefe;
+    padding: 20px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__line{
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__text{
+    font-size: 14px;
+    text-align: center;
+    @extend %rubik-400;
+    color: $default;
+    margin-top: 33px;
+    margin-bottom: 27px;
+  }
+  &__account{
+    display: block;
+    background-color: #fff;
+    @extend %rubik-400;
+    color: #243f4d;
+    padding: 21px 0;
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
 
 
 

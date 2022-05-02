@@ -10,7 +10,7 @@ body{
   padding: 0 15px;
 }
 
-a {
+a{
   color: #7b7b7b;
   font-size: 14px;
   @extend %rubik-400;
@@ -23,3 +23,35 @@ a {
   color: #1a1a1a;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color: #737980;
+    padding-right: 10px;
+    font-size: 14px;
+    @extend %rubik-400;
+    position: relative;
+    &::after {
+      content: '/';
+      position: absolute;
+      width: 7px;
+      height: 14px;
+      right: 1px;
+      top: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+
+}
