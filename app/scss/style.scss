@@ -95,6 +95,19 @@
     border-radius: 50%;
   }
 }
+
+.top{
+  padding: 35px 0 35px;
+  background-color: #edf1f4;
+  &__title{
+    font-size: 36px;
+    @extend %rubik-400;
+    color: #222933;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 footer{
   background-color: #fff;
   width: 1170px;
@@ -668,12 +681,88 @@ margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
   }
   &__item{
     margin-right: 100px;
 }
 }
 
+.icons {
+  background-color: $accent;
+  padding: 77px 0 88px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  &__item {
+    margin-right: 100px;
+  }
+}
+
+.modal{
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  &__label,
+  &__error {
+    margin-bottom: 30px;
+    display: block;
+    font-size: 14px;
+    color: $default;
+    @extend %rubik-400;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    background-color: #fff;
+    margin-top: 14px;
+    height: 55px;
+    padding: 0 15px;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    @extend %rubik-400;
+    color: #fffefe;
+    padding: 20px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__line{
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__text{
+    font-size: 14px;
+    text-align: center;
+    @extend %rubik-400;
+    color: $default;
+    margin-top: 33px;
+    margin-bottom: 27px;
+  }
+  &__account{
+    display: block;
+    background-color: #fff;
+    @extend %rubik-400;
+    color: #243f4d;
+    padding: 21px 0;
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
 
 
 
