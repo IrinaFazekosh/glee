@@ -724,6 +724,9 @@ margin: 0 auto;
     height: 55px;
     padding: 0 15px;
   }
+  &__link{
+    color: $default;
+  }
   &__btn{
     display: block;
     background-color: #a3bbc8;
@@ -763,6 +766,133 @@ margin: 0 auto;
     font-size: 18px;
   }
 }
+
+.conditions{
+  padding-top: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+    &__main{
+      max-width: 1200px;
+    }
+    &__info{
+      margin-bottom: 25px;
+      font-size: 24px;
+      @extend %rubik-400;
+      color: #243f4d;
+      margin-top: 75px;
+    }
+    &__item{
+      margin-bottom: 30px;
+      font-size: 16px;
+      @extend %rubik-400;
+      line-height: 1.875;
+      color: #243f4d;
+      list-style-type: decimal-leading-zero;
+    }
+    &__text{
+      font-size: 16px;
+      @extend %rubik-400;
+      line-height: 1.875;
+      color: #243f4d;
+      margin-bottom: 75px;
+    }
+}
+
+.about{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 120px;
+  
+  &__content{
+    display: flex;
+  }
+  &__inner-two{
+    padding-top: 85px;
+    padding-left: 50px;
+    max-width: 550px;
+    width: 100%;
+  }
+  &__experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    max-width: 280px;
+  }
+  &__items{
+    font-size: 140px;
+    @extend %rubik-500;
+    color: #a3bbc8;
+  }
+  &__item{
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #243f4d;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title{
+    font-size: 34px;
+    color: #243f4d;
+    @extend %dmsand-700;
+    margin-bottom: 50px;
+  }
+  &__text{
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #243f4d;
+    max-width: 555px;
+  }
+  &__line{
+    border-bottom: 2px solid #e6eaf0;
+    margin-top: 65px;
+    margin-bottom: 40px;
+  }
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &__icon-text{
+    font-size: 36px;
+    @extend %dmsand-700;
+    color: #243f4d;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  &__icon-under{
+    color: #4c4c4c;
+    font-size: 16px;
+    @extend %dmsand-700;
+    text-align: center;
+    margin-left: 20px;
+  }
+  &__icon::before{
+    content: '';
+    margin-left: -45px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+  }
+  &__icon--projects::before{
+    background-image: url('../images/about/projects.svg');
+  }
+  &__icon--revenue::before{
+    background-image: url('../images/about/revenue.svg');
+  }
+  &__icon--awards::before{
+    background-image: url('../images/about/awards.svg');
+  }
+}
+
+
+
+
+
 
 
 
