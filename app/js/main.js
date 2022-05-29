@@ -11,12 +11,12 @@ $(function(){
 
   $('.button-list').on('click', function () {
     $('.products-item').addClass('products-item--list');
-    $('.products-list__inner').addClass('product-list__nogrid');
+    $('.product-list__content-inner').addClass('product-list__nogrid');
   });
 
   $('.button-grid').on('click', function () {
     $('.products-item').removeClass('products-item--list');
-    $('.products-list__inner').removeClass('product-list__nogrid');
+    $('.product-list__content-inner').removeClass('product-list__nogrid');
   });
   
   $('.filter-category__label').on('click', function(){
