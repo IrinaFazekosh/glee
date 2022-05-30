@@ -18,11 +18,13 @@ $(function(){
     $('.products-item').removeClass('products-item--list');
     $('.product-list__content-inner').removeClass('product-list__nogrid');
   });
-  
-  $('.filter-category__label').on('click', function(){
-    $(this).next().slideToggle();
-    $('.filter-category__list').toggleClass('.filter-category__checkbox--bottom');
-  });
+
+
+  $('.filter-category__label').off().on('click', function(e){
+    e.preventDefault();
+   $(this).toggleClass('active');
+   $(this).next().slideToggle();
+});
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",

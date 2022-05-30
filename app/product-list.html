@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@IrinaFazekosh
-IrinaFazekosh
-/
-glee
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-glee/app/product-list.html
-@IrinaFazekosh
-IrinaFazekosh added shop page/first part
-Latest commit 4d93b2e 4 days ago
-History
-1 contributor
-756 lines (740 sloc) 64.3 KB
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,8 +93,12 @@ History
                     </span>
                   </div>
                   <input class="filter-category__input" type="checkbox">
-                  <span class="filter-category__checkbox--active"></span>
                 </label>
+                <ul class="filter-category__list">
+                  <li><a class="filter-category__item-link" href="#">Chair 1</a></li>
+                  <li><a class="filter-category__item-link" href="#">Chair 2</a></li>
+                  <li><a class="filter-category__item-link" href="#">Chair 3</a></li>
+                </ul>
                 <label class="filter-category__label">
                   <div class="filter-category__checkbox">
                     <span class="filter-category__text">
@@ -131,8 +106,12 @@ History
                     </span>
                   </div>
                   <input class="filter-category__input" type="checkbox">
-                  <span class="filter-category__checkbox--active"></span>
                 </label>
+                <ul class="filter-category__list">
+                  <li><a class="filter-category__item-link" href="#">Table 1</a></li>
+                  <li><a class="filter-category__item-link" href="#">Table 2</a></li>
+                  <li><a class="filter-category__item-link" href="#">Table 3</a></li>
+                </ul>
                 <label class="filter-category__label">
                   <div class="filter-category__checkbox">
                     <span class="filter-category__text">
@@ -140,8 +119,12 @@ History
                     </span>
                   </div>
                   <input class="filter-category__input" type="checkbox">
-                  <span class="filter-category__checkbox--active"></span>
                 </label>
+                <ul class="filter-category__list">
+                  <li><a class="filter-category__item-link" href="#">Lamp 1</a></li>
+                  <li><a class="filter-category__item-link" href="#">Lamp 2</a></li>
+                  <li><a class="filter-category__item-link" href="#">Lamp 3</a></li>
+                </ul>
                 <label class="filter-category__label">
                   <div class="filter-category__checkbox">
                     <span class="filter-category__text">
@@ -149,8 +132,12 @@ History
                     </span>
                   </div>
                   <input class="filter-category__input" type="checkbox">
-                  <span class="filter-category__checkbox--active"></span>
                 </label>
+                <ul class="filter-category__list">
+                  <li><a class="filter-category__item-link" href="#">Watch 1</a></li>
+                  <li><a class="filter-category__item-link" href="#">Watch 2</a></li>
+                  <li><a class="filter-category__item-link" href="#">Watch 3</a></li>
+                </ul>
                 <label class="filter-category__label">
                   <div class="filter-category__checkbox">
                     <span class="filter-category__text">
@@ -158,8 +145,12 @@ History
                     </span>
                   </div>
                   <input class="filter-category__input" type="checkbox">
-                  <span class="filter-category__checkbox--active"></span>
                 </label>
+                <ul class="filter-category__list">
+                  <li><a class="filter-category__item-link" href="#">Clock 1</a></li>
+                  <li><a class="filter-category__item-link" href="#">Clock 2</a></li>
+                  <li><a class="filter-category__item-link" href="#">Clock 3</a></li>
+                </ul>
               </form>
             </div>
             <div class="filter filter-price">
@@ -323,15 +314,25 @@ History
                   </div>
 
                 </div>
+                <div class="products-item__wrapper">
                 <h4 class="products-item__title">
                   Wooden radio
                 </h4>
+                <div class="star products-item__star" data-rateyo-rating="4"></div>
                 <div class="products-item__price">
                   $29.00
                 </div>
+                <div class="products-item__text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation
+                </div>
+                <button class="products-item__btn">
+                  Add to cart
+                </button>
+                </div>
               </div>
 
-              <div class="products-item mix chairs">
+              <div class="products-item">
                 <div class="products-item__img-box">
                   <img class="products-item__images" src="images/product/2.png" alt="product">
                   <div class="products-item__link-box">
@@ -358,11 +359,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Wooden chair
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Wooden chair
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -393,11 +404,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  White chair
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    White chair
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -428,15 +449,25 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Retro table
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
-              <div class="products-item mix lighting">
+              <div class="products-item">
                 <div class="products-item__img-box">
                   <img class="products-item__images" src="images/product/5.png" alt="product">
                   <div class="products-item__link-box">
@@ -463,11 +494,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Wooden radio
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Wooden radio
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -498,11 +539,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Retro table
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -533,11 +584,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Wooden chair
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Wooden chair
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -568,11 +629,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  White chair
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    White chair
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
 
@@ -603,11 +674,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Retro table
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
               <div class="products-item mix furnitures">
@@ -637,14 +718,24 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Retro table
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
-              <div class="products-item mix furnitures">
+              <div class="products-item">
                 <div class="products-item__img-box">
                   <img class="products-item__images" src="images/product/10.png" alt="product">
                   <div class="products-item__link-box">
@@ -671,11 +762,21 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Wooden radio
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
               <div class="products-item mix furnitures">
@@ -705,16 +806,42 @@ History
                     </a>
                   </div>
                 </div>
-                <h4 class="products-item__title">
-                  Retro table
-                </h4>
-                <div class="products-item__price">
-                  $29.00
+                <div class="products-item__wrapper">
+                  <h4 class="products-item__title">
+                    Wooden radio
+                  </h4>
+                  <div class="star products-item__star" data-rateyo-rating="4"></div>
+                  <div class="products-item__price">
+                    $29.00
+                  </div>
+                  <div class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation
+                  </div>
+                  <button class="products-item__btn">
+                    Add to cart
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">NEXT</a>
+          </li>
+        </ul>
       </div>
       </div>
       </div>
