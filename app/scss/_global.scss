@@ -56,3 +56,35 @@ a{
   }
 
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 120px;
+  align-items: center;
+
+  .pagination__list {
+    display: flex;
+  }
+
+  &__item{
+    margin-right: 15px;
+    
+  }
+
+  &__link {
+    color: #243f4d;
+    border: 1px solid #a3bbc8;
+    padding: 19px 22px;
+    font-size: 16px;
+    @extend %rubik-400;
+  }
+
+
+  &__link--active {
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 19px 22px;
+  }
+
+}

@@ -1,5 +1,31 @@
 $(function(){
 
+  $('.product-list__filter-btn').on('click', function(){
+    $('.product-list__filters').slideToggle();
+  });
+
+  $('.product-list__filter-btn').on('click', function () {
+    $('.product-list__filter-btn').removeClass('product-list__filter-btn--active');
+    $(this).addClass('product-list__filter-btn--active');
+  });
+
+  $('.button-list').on('click', function () {
+    $('.products-item').addClass('products-item--list');
+    $('.product-list__content-inner').addClass('product-list__nogrid');
+  });
+
+  $('.button-grid').on('click', function () {
+    $('.products-item').removeClass('products-item--list');
+    $('.product-list__content-inner').removeClass('product-list__nogrid');
+  });
+
+
+  $('.filter-category__label').off().on('click', function(e){
+    e.preventDefault();
+   $(this).toggleClass('active');
+   $(this).next().slideToggle();
+});
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
