@@ -2014,8 +2014,148 @@ margin: 0 auto;
     text-transform: uppercase;
     font-size: 14px;
     @extend %rubik-400;
+    cursor: pointer;
   }
 }
+
+.contact{
+  padding-top: 120px;
+  width: 1170px;
+  margin: 0 auto;
+  &__info-subtitle{
+    font-size: 16px;
+    text-align: center;
+    color: #a3bbc8;
+    @extend %poppins-700;
+    margin-bottom: 20px;
+  }
+  &__info-title{
+    font-size: 35px;
+    text-align: center;
+    @extend %dmsand-500;
+    color: #436372;
+    margin-bottom: 75px;
+  }
+  &__info-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+  &__info-item{
+    width: 370px;
+    height: 385px;
+    background-color: #fbfbfb;
+    text-align: center;
+    padding: 70px 35px;
+    transition: all .3s;
+  }
+  &__info-item + .contact__info-item{
+    margin-left: 30px;
+  }
+  &__info-item:hover{
+    border: 3px solid #a3bbc8;
+    .contact__info-bg{
+        background-color: #a3bbc8;
+        path {
+          fill: #ffffff;
+          stroke: #ffffff;
+        }
+      }
+  }
+  &__info-bg{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+  }
+  
+  &__info-name{
+    font-size: 20px;
+    @extend %dmsand-500;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+  &__info-descr{
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #565872;
+  }
+  &__info-descr a{
+    color: #565872;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-form{
+  width: 610px;
+  &__name,
+  &__mail{
+    border: none;
+    width: 303px;
+    height: 50px;
+    background-color: #fafafa;
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #77788d;
+    padding-left: 20px;
+  }
+  &__name::placeholder {
+    background: url('../images/icons/name-icon.svg') no-repeat;
+    background-position: 93% 5px;
+  }
+  &__mail::placeholder {
+    background: url('../images/icons/mail-icon.svg') no-repeat;
+    background-position: 93% 5px;
+  }
+  &__box-input{
+    margin-bottom: 25px;
+  }
+  &__textarea{
+    width: 610px;
+    height: 175px;
+    border: none;
+    background-color: #fafafa;
+    font-size: 16px;
+    @extend %rubik-400;
+    color: #77788d;
+    padding-left: 20px;
+    padding-top: 20px;
+    resize: none;
+  }
+  &__textarea::placeholder{
+    background: url('../images/icons/comments-icon.svg') no-repeat;
+    background-position: 97% 5px;
+  }
+  &__mail+.contact-form__mail {
+    margin-left: 10px;
+  }
+  &__btn{
+    margin-top: 30px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #a3bbc8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    @extend %rubik-500;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+
+
 
 
 
